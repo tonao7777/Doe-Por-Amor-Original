@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Trasitional//EN" "
+http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="pt-br">
+<!-- DOCTYPE html PUBLIC = html documentado blz-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./menu2.css">
+    <link rel="shortcut icon" type="images/png" href="images/shortlogo.png">
+    <script src="js/responsive-nav.js"></script> <!-- responsividade menu-->
+    <title> Doe Por Amor</title>
+
+</head>
+
+<body>
+
+    <div class="geral">
+        <header>
+            <!--menu /logo-->
+            <div id="logo1">
+                <a href=index.html><img src="images/logo.png"></a>
+            </div>
+
+            <nav class="nav-collapse">
+                <ul>
+                    <li class="menu-item active"><a href="https://doeporamor.netlify.app/" data-scroll>Inicio</a></li>
+                    <li class="menu-item"><a href="index.html" data-scroll>Cadastro</a></li>
+                    <li class="menu-item"><a href="https://doeporamor.netlify.app/tela%20de%20login/index.html"
+                            data-scroll>Login</a></li>
+                    <li class="menu-item"><a href="#blog" data-scroll>Doação</a></li>
+                    <li class="drop"><a href="#">Mais</a>
+
+                </ul>
+                </li>
+                </ul>
+            </nav>
+            </nav>
+        </header>
+
+
+
+
+        <!-- mandar formulario consultar login.php: porem nao funcional ainda -->
+        <form method=”POST” action=”login.php”>
+            
+            <div class="flex-box container-box">
+                <div class="caixalaranja">
+                    <div class="fomulariocaixa">
+
+                        <h1><em>Cadastro</em></h1>
+
+                        <div class="form-group m-0">
+
+                            <input class="js-search-input form-control search-input" autocomplete="on"  id="espaco" type="nome"
+                                name="nome" placeholder='Nome' size="50" required />
+
+        </form>
+
+        <!-- placeholder  o nome que fica dentro da caxinha exemplo: email, auto complete seria quando o usuario queira
+            que apareça informações antiga na caixinha exemplo email quando clickar vai aparecer antigos dados -->
+
+
+        <div class="form-group m-0" required>
+            <input class="js-search-input form-control search-input" autocomplete="on"  id="espaco" type="sobrenome" name="sobrenome"
+                placeholder='Sobrenome' size="50" required />
+
+            </form>
+            <!-- email- obrigatorio, -->
+            <div class="form-group m-0" required>
+                <input class="js-search-input form-control search-input"  autocomplete="on"  id="espaco" type="email" name="email"
+                    placeholder='E-mail' size="50" required />
+
+                </form>
+                <!--senha obrigatorio-->
+                <div class="form-group m-0" required>
+                    <input class="js-search-input form-control search-input" autocomplete="off" id="espaco"  type="password" name="q"
+                        placeholder='Senha' size="50" required />
+
+                    </form>
+                    <br>
+                    <!--estados/ caixa-->
+                    <div class="select">
+                        <select id="states">
+                            <option selected="" value="">Estado</option>
+                            <option value="Acre">Acre</option>
+                            <option value="Alagoas">Alagoas</option>
+                            <option value="Amapá">Amapá</option>
+                            <option value="Amazonas">Amazonas</option>
+                            <option value="Bahia">Bahia</option>
+                            <option value="Ceará">Ceará</option>
+                            <option value="Distrito Federal">Distrito Federal</option>
+                            <option value="Espírito Santo">Espírito Santo</option>
+                            <option value="Goiás">Goiás</option>
+                            <option value="Maranhão">Maranhão</option>
+                            <option value="Mato Grosso">Mato Grosso</option>
+                            <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                            <option value="Minas Gerais">Minas Gerais</option>
+                            <option value="Pará">Pará</option>
+                            <option value="Paraíba">Paraíba</option>
+                            <option value="Paraná">Paraná</option>
+                            <option value="Pernambuco">Pernambuco</option>
+                            <option value="Piauí">Piauí</option>
+                            <option value="Rio de Janeiro">Rio de Janeiro</option>
+                            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                            <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                            <option value="Rondônia">Rondônia</option>
+                            <option value="Roraima">Roraima</option>
+                            <option value="Santa Catarina">Santa Catarina</option>
+                            <option value="São Paulo">São Paulo</option>
+                            <option value="Sergipe">Sergipe</option>
+                            <option value="Tocantins">Tocantins</option>
+                        </select>
+                        <!--cidades obrigatorio-->
+                        <input class="js-search-input form-control search-input" autocomplete="on"  id="espaco" type="nome"
+                            name="cidade" placeholder='Cidade' size="50" required />
+                        </form>
+                        <!-- cpf obrigatorio-->
+                        <input type="text" name="cpf" placeholder='CPF' size="50" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                            \ title="Digite um CPF no formato: xxx.xxx.xxx-xx" id="text">
+                        <!-- concordo que sou maior de 18 caixa-->
+                        <input type="checkbox" id="concordo" name="concordo" check required>
+                        <label for="concordo" id="####"> <strong>Concordo que sou maior de 18</strong></label>
+                        <br>
+                        <!-- botão enviar -cadastrar-se obrigatorio -->
+                        <div class="submit">
+                            <br>
+                            <input type="submit" id="submit" class="submit" value="Cadastrar-se">
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  responsividade js menu-->
+            <script src="js/fastclick.js"></script>
+            <script src="js/scroll.js"></script>
+            <script src="js/fixed-responsive-nav.js"></script>
+
+</body>
+</html>

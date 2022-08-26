@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow: hidden; /* proibir rolagem horizontal e vertical  */
+}
+
+
+
+body {            /* Centralizar ao meio */
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.geral {
+  width: 100%;
+  height: 1200px;
+}
+
+.caixalaranja {
+  background-color: #d78322;
+  width: 400px;
+  height: 480px;
+  margin-top: 407px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-box {
+  height: 300px;
+}
+
+.content-box {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 200px;
+}
+
+
+
+
+.fomulariocaixa {
+  width: 300px;
+  height: 316px;
+  position: relative;
+  text-align: center;
+  border-radius: 50px;
+
+}
+
+em {
+  height: 493px;
+  margin-top: -281px;
+  margin-left: 120px;
+  border-radius: 50px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+
+  color: white;
+  font-family: ui-rounded;
+  font-size: 30pt;
+}
+
+
+
+/* select é para definar a altura e largura da caixinha de estados */
+.select select {
+  border-radius: 30px;
+  opacity: 0.8;
+  border-color: white;
+  width: 333px;
+  height: 30px;
+  margin-left: 31px;
+  margin-top: 3px;
+
+}
+
+
+input {
+  border-radius: 30px;
+  opacity: 0.8;
+  border-color: white;
+  width: 333px;
+  height: 30px;
+  margin-left: 31px;
+  margin-top: 3px;
+}
+
+
+.submit {
+  border-radius: 30px;
+  width: 120px;
+  height: 41px;
+  margin-top: 15px;
+  margin-left: 33px;
+  opacity: 0.8;
+  position: absolute;
+}
+
+button {
+  margin-top: 39px;
+  margin-left: 60px;
+  height: 38px;
+  width: 109px;
+  border-radius: 30px;
+  opacity: 0.7;
+}
+
+input#concordo {
+  margin-top: 6px;
+  margin-left: -104px;
+  width: 20px;
+  position: absolute;
+}
+
+strong {
+  margin-top: 12px;
+  margin-left: -110px;
+  position: absolute;
+  width: 300px;
+}
+
+/* espaco dentro da caixa de cadastro*/
+input#espaco, input#text {
+  padding-left:5px;
+}

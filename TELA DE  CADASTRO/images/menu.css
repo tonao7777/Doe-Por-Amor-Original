@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@media screen and (max-width:320px )  {
+
+    *{
+		margin: 0;
+	}
+
+    main.cards section.container{
+        margin-left: 0;
+        margin-bottom: 32px;
+        text-align: justify;
+        display: flex;
+    }
+	
+ 
+}
+div.menu{
+	height: 80px;
+    width:100%;
+    background-image:url("./fundo.png");
+    position:fixed;
+	background-color: #ff8800;
+	
+	}
+
+	div.menu h1{
+		font-size: 20pt;
+		margin-left: 85px;
+		margin-top: 0px;
+		font-family:times;
+		color: #ff8800;
+	}
+
+	
+	div.menu img{
+	
+		max-height: 74px;
+    align-content: center;
+        
+	}
+     .menu a{  
+	
+	cursor: pointer;
+	text-decoration:none;
+	color: white;
+	padding: 5px;
+	
+        
+	}
+
+
+#img{ cursor: pointer;
+	text-decoration:none;
+	background-color:#ff8800; }
+
+	.menu a label{
+		margin-left: 5px;
+	    color: whitesmoke;
+		cursor: pointer;
+	}
+
+
+	.menu a:hover{
+      
+	
+	}
+
+	div.links{
+		
+		height: 20px;
+		margin-top:-90px;
+		
+		margin-left: 0px;
+        font-size:15pt;
+        text-align: center;
+		display: inline;
+		position: absolute;
+	}
+
+
+
+   
+
+
+	
+
+	nav.links{
+		margin-top: 50px;
+		margin-left:25px;
+		display: inline;
+		inline-size:100%;
+		width:100%;
+		white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+	
+	}
+
+	div.links a:hover{
+		
+		
+	}
+
+
+	nav{
+     position: fixed;
+      overflow-y: auto;
+	  overflow-x: hidden;
+	   
+	 
+	}
+
+	@media (max-width: 576px){
+
+
+
+    nav{
+		width: 0px;
+
+	}
+     main{
+		
+		
+		
+	 }
+	}
