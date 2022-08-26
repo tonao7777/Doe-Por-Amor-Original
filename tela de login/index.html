@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Trasitional//EN"  "
+http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="pt-br">
+<!-- DOCTYPE html PUBLIC = html documentado blz-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" type="images/png" href="images/shortlogo.png">
+  <link rel="stylesheet" href="./menu2.css">
+  <script src="js/responsive-nav.js"></script>  <!-- responsividade do menu em js -->
+ 
+  <title>Doe Por Amor</title>
+
+
+  <script src="script.js"></script>
+  <!--ver se usuario ou password está correto! -->
+  <script>
+
+    function Login() {
+      var done = 0;
+      var usuario = document.login.usuario.value; usuario = usuario.toLowerCase();
+      var password = document.login.password.value; password = password.toLowerCase();
+      //usuarios ativos usuario e senha //
+      //melhor password e usuario:doeporamor password:123456789
+      //"if" se usuario e senha estiver digitados == usuario e senha corretos, va para teste.html ou local predefinido
+      //"if": se não de um aviso "alert" dizendo usuario e senha  sao invalidos
+      if (usuario == "carrododanone" && password == "123") { window.location = "teste.html"; done = 1; } 
+      if (usuario == "Antony" && password == "doepfv") { window.location = "teste.html"; done = 1; }
+      if (usuario == "doeporamor" && password == "123456789") { window.location = "file:///C:/Users/Antony/Desktop/doe%20por%20amor/principal/index.html#home"; done = 0; }
+      if (done == 0) { alert("Usuario Ou Senha invalido"); }
+    }
+
+
+    //função  de ver password ocutada//
+    
+    function mouseoverPass(obj) {
+      var obj = document.getElementById('password');
+      obj.type = "text";  //texto primero//
+    }
+    function mouseoutPass(obj) {
+      var obj = document.getElementById('password');
+      obj.type = "password"; // apertando no botao ou na imagem veremos a senha digitada//
+    }
+
+
+  </script>
+
+</head>
+
+<body>
+
+    <div id="geral">
+<!--menu  e logo-->
+<!--menu desce ate o local predefinido veja href-->
+      <header>
+        <div id="logo1"> <a href=index.html><img src="images/logo.png"></a> </div> <a href="#home" class="logo"
+          data-scroll></a>
+        <nav class="nav">
+          <nav class="nav-collapse">
+            <ul>
+              <meta name="viewport" content="width=device-width, user-scalable=no">
+              <li class="menu-item
+      active"><a href="https://doeporamor.netlify.app/"
+                  data-scroll>Inicio</a></li>
+              <li class="menu-item"><a
+                  href="https://doeporamor.netlify.app/tela%20de%20%20cadastro/"
+                  data-scroll>Cadastro</a></li>
+              <li class="menu-item"><a href="#projects" data-scroll>Login</a></li>
+              <li class="menu-item"><a href="#blog" data-scroll>Doação</a></li>
+              <li class="drop"><a href="#">Mais</a>
+
+              </li>
+            </ul>
+          </nav>
+    </div>
+    <div class="flex-box container-box">
+    <div id="login">
+
+     <h1><em>Login</em></h1> 
+
+      <!-- para usarmos o input no css  adicionamos o id ou classe para modificalos no css-->
+      <!--exemplo id   input#usuario{}  exemplo class  input.usuario {}-->
+      <!-- placeholder é para colocar nome dentro de uma caixa, e quando digitamos algo desaparece
+              o nome -->
+      <!-- size e o tamanho, autocomplete é perfeito para quem ja tem dados salvo em seu
+              browser, aparece todos os dados salvos antigos -->
+      <!-- required: deixa obrigatorio colocar dados dentro da caixa -->
+      <form name="login">
+        <input type="text" name="usuario" autocomplete="on" type="nome" name="nome" id="usuario"
+          placeholder='Usuario ou e-mail cadastrado' size="50" required />
+        <br>
+        <br>
+        <input type="password" id="password" class="usuario" name="password" placeholder='Senha' size="50">
+
+        <img src="./images/olho.png" onclick="mouseoverPass();" onmouseout="mouseoutPass();" id="olho" class="olho" />
+
+        <br>
+
+        <div class="botao"> </div>
+        <a href="Index.html"><input id="btn" type="button" value="Entrar" onClick="Login()"></a>
+
+      </form>
+      <div class="cadastrar"> Não tem cadastro?</div>
+
+      <b>Esqueceu seu usuario ou a Senha?</b>
+    </div>
+    <a
+      href="esqueceusuasenha/index.html">
+      <p>Clique Aqui</p>
+    </a>
+
+    <a href="https://doeporamor.netlify.app/tela%20de%20%20cadastro/"> <button
+        id="btq">Cadastrar-se </button>
+    </a>
+    <br>
+    </div>
+    </div>
+  </div>
+
+    <!--  responsividade js menu// rolagem do menu- responsividade- fechamento quando ele estiver responsivo-->
+    <!-- Lembrano Aqui é flex box-->
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
+  
+
+</body>
+</html>

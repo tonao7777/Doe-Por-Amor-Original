@@ -1,0 +1,33 @@
+Atualmente São 2 paginas finalizadas : login e cadastro.
+
+
+Caso essas duas paginas estejam lincadas com outra paginas, a não ser essas duas "login e cadastro"
+
+não deverá ser considerado exemplo : Recuperação de senha e Inicio -essas paginas
+não estão completas.
+
+Codigo Bastante Comentado, para não se perdemos depois.
+
+O Doe Por Amor é um site quê une todas as ongs.
+
+PHP ainda não foi implementado nessas 2 paginas
+
+Foi utilizado como linguagem de programação:JAVA SCRIPT;
+
+
+O Quê Utilizamos (nessas 2 paginas -LOGIN e CADASTRO):
+
+HTML: linguagem de marcação utilizada para estruturar os elementos da página, como parágrafos, links, títulos,botoes.
+
+
+CSS: linguagem de estilos utilizada para definir cores, fontes, tamanhos, posicionamento e qualquer outro valor estético para os elementos da página.
+ 
+
+JavaScript:é uma linguagem de programação que permite a você criar conteúdo que se atualiza dinamicamente, funções - login -cadastro 
+como pode vê no codigo.
+
+
+
+Lembrando: as redes sociais, menu redondo ficará no inicio.
+
+Outro Lembrete: Contem flex box.
