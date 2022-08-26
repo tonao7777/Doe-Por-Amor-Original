@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- TELA DE INICIO ESTÁ INCOMPLETA AVISO", Tela De Cadastro e de login estão prontas-->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="images/png" href="images/shortlogo.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="./miniatura.css">
+  <link rel="stylesheet" href="./menu2.css">
+  <script src="js/responsive-nav.js"></script> <!-- responsividade do menu-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- menu circular das redes sociais frame work-->
+  <title>Doe Por Amor</title>
+
+
+  <style>
+    /* style das varras que aparecem e somem blz  */
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+
+
+    b,
+    .co p {
+      margin-top: -400px;
+      position: absolute;
+      text-align: center;
+      width: 66%;
+      inline-size: 1000px;
+      font-size: 20pt;
+      color: #e57c0c;
+      align-items: center;
+      justify-content: center;
+   
+
+    }
+
+
+    .co p {
+      font-size: 3rem;
+      padding: 0.5rem;
+    
+      position: absolute;
+      font-weight: bold;
+      text-align: center;
+      font-size: 15pt;
+      overflow: hidden;
+      margin-top: -300px;
+      color: black;
+      position: absolute;
+      display: block;
+      align-items: center;
+      justify-content: center;
+
+
+    }
+
+    .co p span.typed-text {
+      font-weight: normal;
+      color: #e57c0c;
+    }
+
+    .co p span.cursor {
+      display: inline-block;
+      background-color: #ccc;
+      margin-left: 0.1rem;
+      width: 3px;
+      animation: blink 1s infinite;
+    }
+
+    .co p span.cursor.typing {
+      animation: none;
+    }
+
+    @keyframes blink {
+      0% {
+        background-color: #ccc;
+      }
+
+      49% {
+        background-color: #ccc;
+      }
+
+      50% {
+        background-color: transparent;
+      }
+
+      99% {
+        background-color: transparent;
+      }
+
+      100% {
+        background-color: #ccc;
+      }
+    }
+
+
+
+
+    /*   miniatura-nao automatica  */
+
+
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+      margin: 0
+    }
+
+    .mySlides {
+      display: none
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      margin-top: -20px;
+      position: relative;
+      left: 25%;
+
+    }
+
+    /* proximo & e voltar */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      margin-left: -400px;
+      color: rgb(235, 123, 4);
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The passe/bulvars/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    h3 {
+      width: 50px;
+      height: 500px;
+
+      /* Centralizar na vertical e na horizontal */
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      margin: -25px 0 0 -15px;
+      /* aplique margens superior e esquerda negativas para centralizar de verdade o elemento */
+      inline-size: 1000px;
+      /* maxima largura das letras na pagina */
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+  <h3> Olá a pagina está em manuntenção no momento, Não se preocupem voltaremos logo:)<br> Queira <a
+      href="TELA DE  CADASTRO/index.html">Se Cadastrar<a href="tela de login/index.html"> ou Faça Login </h3></a>
+
+  <!--- center: só para centralizar as varras --->
+  <!-- palavras que aparecem no inicio - lincado com js e style nesse html msm-->
+  <!-- Quer Doar E Não Sabe Como ?  "click aqui" foi lincado com <A HREF="" , miniatura quando as varras aparecerem ela ira ficar lincada- Antonyarmengues :) -->
+  <div class="co">
+    <p><em><strong>Quer Doar E Não Sabe Como ? </strong></em><a
+        href="https://neon.com.br/aprenda/financas-pessoais/o-que-doar/"><span class="typed-text"></span><span
+          class="cursor">&nbsp;</span></p></a>
+    <em>
+      <b><em><br>Olá! Tudo bem?, Seja Bem Vindo Ao Doe Por Amor... </em></b>
+    </em>
+  </div>
+  </div>
+
+  <main class="container">
+    <div id="geral">
+      <!-- palavras que aparecem no inicio - lincado com js e style nesse html msm-->
+
+
+      <header>
+        <div id="logo1">
+          <a href=index.html><img src="images/logo.png"></a>
+        </div>
+
+        <!-- menu -->
+        <a href="#home" class="logo" data-scroll></a>
+        <nav class="nav">
+          <nav class="nav-collapse">
+            <ul>
+              <li class="menu-item active"><a href="#home" data-scroll>Inicio</a></li>
+              <li class="menu-item"><a href="TELA DE  CADASTRO/index.html" data-scroll>Cadastro</a></li>
+              <li class="menu-item"><a href="tela de login/index.html" data-scroll>Login</a></li>
+              <li class="menu-item"><a href="#doacao" data-scroll>Doação</a></li>
+
+              <!-- veja esse drop down está incompvaro-->
+              <li class="drop"><a href="#">Mais</a>
+                <!-- <ul class="dropdown">
+                </ul>
+              -->
+              </li>
+            </ul>
+          </nav>
+
+    </div>
+
+
+    <!-- esse section seria para quando apertarem no menu - a pagina descesse ate o o local -->
+    <section id="home">
+
+    </section>
+
+    <section id="about">
+      <!--  lincagem de html  dentro de html link de outro html local": caso precise esta aqui comentao , -->
+      <!-- <li><a href="file:///C:/Users/Antony/Desktop/doe%20por%20amor/TELA%20DE%20%20CADASTRO/index.html" id="cadastro"
+          width="1200" height="1200px" left="500"></iframe>
+          <a href="file:///C:/Users/Antony/Desktop/doe%20por%20amor/TELA%20DE%20%20CADASTRO/index.html"
+            id="vaparalogin">
+
+          </a>
+        -->
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- esse section seria para quando apertarem no menu - a pagina descesse ate o o local -->
+    <section id="projects">
+      <h1></h1>
+
+    </section>
+    <!-- esse section seria para quando apertarem no menu - a pagina descesse ate o o local -->
+    <center>
+      <h1> Doações</h1>
+      <section id="doacao">
+
+
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+
+            <img src="https://institutoreacao.org.br/wp-content/uploads/2020/09/news06.jpg" style="width:100%"
+              style="height:50%">
+
+          </div>
+
+          <div class="mySlides fade">
+
+            <img src="https://institutoreacao.org.br/wp-content/uploads/2020/10/news09.jpg" style="width:80%"
+              style="left:10%">
+
+          </div>
+
+          <div class="mySlides fade">
+
+            <img
+              src="https://multimidia.boavontade.com/sites/default/files/styles/grande/public/flat_campanha_alimento-800_0.jpg?itok=pp4WIk2o"
+              style="width:80%" style="height:50%">
+
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        </div>
+    </center>
+
+
+    </div>
+    <h1></h1>
+    </section>
+
+    <!-- MINIATURA PASSANDO IMGS/ css da miniatura e js, estao na pasta caso queira editalo ja sabe-
+    <main id="container">
+      <div id="slides">
+        <a href="tela de login/index.html" id="vaparalogin">
+          <img class="imggeral" src="https://oabsc.s3.sa-east-1.amazonaws.com/images/202206141632260.jpeg" alt="Image1">
+          <img src="https://www.aspaan.org.br/site2016/wp-content/uploads/2017/05/Pedido-doa%C3%A7%C3%A3o-ASPAAN.jpg"
+            alt="Image2">
+          <img
+            src="https://www.spzonline.com.br/uploads/images/2021/04/campanha-de-incentivo-de-doacoes-para-projetos-direcionados-a-idosos-e-lancada-por-conselho-municipal-94e43.jpg"
+            alt="Image3">
+          <img src="https://jfhipermidia.files.wordpress.com/2014/05/pjf.png" alt="Image4">
+          <img
+            src="https://multimidia.boavontade.com/sites/default/files/styles/grande/public/flat_site_doacoes_800_0.jpg?itok=3yaHgDPT"
+            alt="Image5">
+          <img src="https://www.quintaldeana.org.br/img/quintal-de-ana-slide-adocao2.jpg" alt="Image6">
+          <img src="https://www.quintaldeana.org.br/img/quintal-de-ana-slide-adocao.jpg" alt="Image7">
+          <img
+            src="https://storage.googleapis.com/atados-v3/user-uploaded/images/91570dd7-bdc9-4f5d-97c2-72f486b72b86.png"
+            alt="Image8">
+        </a>
+      </div>
+    -->
+
+
+
+
+    <!-- aqui é o menu das redes sociais , menu circular: facebook ista e o resto -->
+
+    <div id="circularMenu" class="redondo">
+
+      <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+        <i class="fa fa-plus"></i>
+      </a>
+
+      <menu class="sociais">
+        <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1661784632&extra_1=s%7Cc%7C320269324047%7Ce%7Cfacebook%7C&placement=&creative=320269324047&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1661784632%26adgroupid%3D63686352403%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D20088%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjworiXBhDJARIsAMuzAuyGDWMTIeRaG63mb2a0AEqnZz-b9gNBJI5GqOYAagkO1F32k4Y7qusaAgycEALw_wcB"
+          class="menu-item fa fa-facebook"></a>
+        <a href="https://www.instagram.com/doeporamor0/?r=nametag" class="menu-item fa fa-instagram"></a>
+        <a href="https://twitter.com/TwitterBrasil?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+          class="menu-item fa fa-twitter"></a>
+        <a href="https://wa.me/message/FUGRZTKT6Q77D1" class="menu-item fa fa-whatsapp"></a>
+      </menu>
+  </main>
+  </div>
+  </div>
+  </div>
+
+
+  <!-- script das palavras que somem e aparecem-->
+
+  <script src="js/palavras.js"></script>
+
+  <!-- miniatura automatica em js
+    <script src="js/miniatura.js"></script>
+    -->
+
+  <!--  responsividade do menu em java script-->
+
+  <script src="js/fastclick.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/fixed-responsive-nav.js"></script>
+
+
+
+
+
+
+
+  <script>  // miniatura sem autoclick//
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var passe = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < passe.length; i++) {
+        passe[i].className = passe[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      passe[slideIndex - 1].className += " active";
+    }
+  </script>
+
+
+</body>
+</html>
